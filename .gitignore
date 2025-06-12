@@ -60,3 +60,6 @@ logs/
 *.log
 
 DP
+models\brain_chest_resnet152_model_state_dict.pth
+models\brain_mobilenetv2_model_state_dict.pth
+models\resnet18_chest.pth
