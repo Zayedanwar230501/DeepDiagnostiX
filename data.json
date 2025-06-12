@@ -1,0 +1,102 @@
+[
+  {
+    "name": "Glioma",
+    "category": "Brain",
+    "description": "Glioma is a type of tumor that occurs in the brain and spinal cord originating from glial cells.",
+    "most_likely_cause": "Genetic mutations, exposure to radiation.",
+    "precautions": ["Avoid exposure to radiation", "Maintain a healthy lifestyle", "Regular medical check-ups"],
+    "symptoms": ["Headaches", "Seizures", "Memory loss", "Nausea", "Vision problems"],
+    "diet": ["High-fiber foods", "Fresh fruits and vegetables", "Lean proteins", "Plenty of fluids"],
+    "effect_of_disease": "Can affect brain function, memory, motor skills, and may lead to life-threatening complications if not treated."
+  },
+  {
+    "name": "Meningioma",
+    "category": "Brain",
+    "description": "Meningioma is a tumor that forms on membranes covering the brain and spinal cord.",
+    "most_likely_cause": "Radiation exposure, hormonal changes, genetic predisposition.",
+    "precautions": ["Limit radiation exposure", "Regular MRI scans if at risk", "Manage hormonal imbalances"],
+    "symptoms": ["Headaches", "Vision problems", "Seizures", "Hearing loss", "Weakness in limbs"],
+    "diet": ["Antioxidant-rich foods", "Low-fat diet", "Green leafy vegetables", "Omega-3 rich foods"],
+    "effect_of_disease": "Can press on brain structures causing neurological issues; usually slow-growing."
+  },
+  {
+    "name": "Pituitary",
+    "category": "Brain",
+    "description": "Pituitary tumors develop in the pituitary gland, affecting hormone production.",
+    "most_likely_cause": "Genetic factors, hormonal imbalances, unknown causes.",
+    "precautions": ["Monitor hormonal levels", "Regular endocrine check-ups", "Manage stress levels"],
+    "symptoms": ["Vision changes", "Fatigue", "Unexplained weight changes", "Growth abnormalities", "Headaches"],
+    "diet": ["Balanced nutrient-rich diet", "Limit processed foods", "Adequate hydration", "Vitamin D and calcium rich foods"],
+    "effect_of_disease": "Affects growth, metabolism, and reproductive functions depending on the hormone involved."
+  },
+  {
+    "name": "Atelectasis",
+    "category": "Chest",
+    "description": "Atelectasis is the collapse or closure of lung tissue affecting gas exchange.",
+    "most_likely_cause": "Post-surgery complications, blockage of airways, lung diseases.",
+    "precautions": ["Deep breathing exercises", "Post-operative physiotherapy", "Avoid smoking"],
+    "symptoms": ["Shortness of breath", "Chest pain", "Coughing", "Rapid breathing"],
+    "diet": ["Anti-inflammatory foods", "Fresh fruits and vegetables", "Adequate fluids", "Omega-3 rich foods"],
+    "effect_of_disease": "Reduces oxygen exchange, can lead to respiratory failure if severe."
+  },
+  {
+    "name": "Effusion",
+    "category": "Chest",
+    "description": "Pleural effusion is the buildup of excess fluid between the layers of the pleura outside the lungs.",
+    "most_likely_cause": "Heart failure, infections, cancer, lung injury.",
+    "precautions": ["Monitor underlying conditions", "Early treatment of infections", "Healthy heart lifestyle"],
+    "symptoms": ["Shortness of breath", "Chest pain", "Dry cough", "Fever (if infection present)"],
+    "diet": ["Low-salt diet", "Lean proteins", "Fruits and vegetables", "Omega-3 fatty acids"],
+    "effect_of_disease": "Can impair lung expansion, causing breathing difficulties."
+  },
+  {
+    "name": "Infiltration",
+    "category": "Chest",
+    "description": "Pulmonary infiltration refers to substances denser than air, such as pus, blood, or protein, filling the lung spaces.",
+    "most_likely_cause": "Infections, lung edema, hemorrhage, tumors.",
+    "precautions": ["Early diagnosis of infections", "Control underlying health issues", "Avoid exposure to irritants"],
+    "symptoms": ["Cough", "Fever", "Chest discomfort", "Shortness of breath"],
+    "diet": ["High-protein diet", "Plenty of fluids", "Anti-inflammatory foods", "Low-sugar intake"],
+    "effect_of_disease": "Reduces lung function; may cause permanent lung damage if untreated."
+  },
+  {
+    "name": "Nodule",
+    "category": "Chest",
+    "description": "Lung nodules are small masses of tissue in the lungs that can be benign or malignant.",
+    "most_likely_cause": "Infections, tumors, inflammatory diseases.",
+    "precautions": ["Avoid smoking", "Regular screenings if at risk", "Timely medical consultation"],
+    "symptoms": ["Often asymptomatic", "Persistent cough", "Shortness of breath (if large)"],
+    "diet": ["Antioxidant-rich diet", "Fresh fruits and vegetables", "Lean proteins", "Low processed food intake"],
+    "effect_of_disease": "If malignant, can lead to lung cancer; benign nodules may not cause symptoms."
+  },
+  {
+    "name": "Pleural_Thickening",
+    "category": "Chest",
+    "description": "Pleural thickening is the scarring or thickening of the pleural membrane around the lungs.",
+    "most_likely_cause": "Asbestos exposure, infections, inflammation.",
+    "precautions": ["Avoid asbestos exposure", "Manage infections promptly", "Regular lung check-ups"],
+    "symptoms": ["Chest pain", "Breathlessness", "Reduced lung capacity"],
+    "diet": ["Anti-inflammatory diet", "Plenty of fruits and vegetables", "Omega-3 fatty acids", "Adequate hydration"],
+    "effect_of_disease": "Leads to restrictive lung disease, reducing lung expansion."
+  },
+  {
+    "name": "Pneumonia",
+    "category": "Chest",
+    "description": "Pneumonia is an infection that inflames the air sacs in one or both lungs.",
+    "most_likely_cause": "Bacteria, viruses, fungi, or inhalation of harmful substances.",
+    "precautions": ["Vaccination", "Good hygiene", "Avoid smoking", "Proper nutrition"],
+    "symptoms": ["Cough with phlegm", "Fever", "Chills", "Shortness of breath", "Chest pain"],
+    "diet": ["Nutritious balanced diet", "Plenty of fluids", "Vitamin C rich foods", "Warm soups and broths"],
+    "effect_of_disease": "Can cause severe respiratory problems and may be life-threatening if not treated."
+  },
+  {
+    "name": "Pneumothorax",
+    "category": "Chest",
+    "description": "Pneumothorax is the presence of air in the pleural space causing lung collapse.",
+    "most_likely_cause": "Lung injury, chest trauma, underlying lung diseases.",
+    "precautions": ["Avoid smoking", "Prevent chest trauma", "Monitor lung conditions closely"],
+    "symptoms": ["Sudden chest pain", "Shortness of breath", "Rapid heart rate", "Fatigue"],
+    "diet": ["High-antioxidant foods", "Adequate hydration", "Avoid processed foods", "Light meals for easier breathing"],
+    "effect_of_disease": "Partial or complete lung collapse leading to severe breathing difficulty."
+  }
+]

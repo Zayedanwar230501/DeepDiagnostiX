@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>X-ray Disease Prediction</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            text-align: center;
+        }
+        .upload-box {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .upload-box input[type="file"] {
+            margin: 10px 0;
+        }
+        .results {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            max-width: 600px;
+            margin: 0 auto;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .results h2 {
+            text-align: center;
+        }
+        .results ul {
+            padding-left: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<h1>X-ray Disease Prediction</h1>
+
+<div class="upload-box">
+    <input type="file" id="fileInput" accept="image/*">
+    <br>
+    <button onclick="uploadImage()">Predict</button>
+</div>
+
+<div id="result" class="results" style="display: none;">
+    <h2>Disease Details</h2>
+    <p><strong>Category:</strong> <span id="category"></span></p>
+    <p><strong>Disease Name:</strong> <span id="name"></span></p>
+    <p><strong>Description:</strong> <span id="description"></span></p>
+    <p><strong>Most Likely Cause:</strong> <span id="cause"></span></p>
+    <p><strong>Precautions:</strong></p>
+    <ul id="precautions"></ul>
+    <p><strong>Symptoms:</strong></p>
+    <ul id="symptoms"></ul>
+    <p><strong>Recommended Diet:</strong></p>
+    <ul id="diet"></ul>
+    <p><strong>Effect of Disease:</strong> <span id="effect"></span></p>
+</div>
+
+<script>
+    function uploadImage() {
+        const fileInput = document.getElementById('fileInput');
+        if (fileInput.files.length === 0) {
+            alert("Please select an image file first.");
+            return;
+        }
+
+        const formData = new FormData();
+        formData.append('file', fileInput.files[0]);
+
+        fetch('/predict', {
+            method: 'POST',
+            body: formData
+        })
+        .then(res => res.json())
+        .then(data => {
+            if (data.error) {
+                alert(data.error);
+            } else {
+                document.getElementById('result').style.display = 'block';
+                document.getElementById('category').textContent = data.predicted_category;
+                document.getElementById('name').textContent = data.details.name;
+                document.getElementById('description').textContent = data.details.description;
+                document.getElementById('cause').textContent = data.details.most_likely_cause;
+                document.getElementById('effect').textContent = data.details.effect_of_disease;
+
+                populateList('precautions', data.details.precautions);
+                populateList('symptoms', data.details.symptoms);
+                populateList('diet', data.details.diet);
+            }
+        })
+        .catch(err => {
+            console.error('Error:', err);
+            alert('Failed to get prediction');
+        });
+    }
+
+    function populateList(elementId, items) {
+        const ul = document.getElementById(elementId);
+        ul.innerHTML = '';
+        if (Array.isArray(items)) {
+            items.forEach(item => {
+                const li = document.createElement('li');
+                li.textContent = item;
+                ul.appendChild(li);
+            });
+        }
+    }
+</script>
+
+</body>
+</html>
