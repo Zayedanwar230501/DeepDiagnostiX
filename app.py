@@ -8,7 +8,7 @@ app = Flask(__name__)
 CORS(app, supports_credentials=True)
 
 # Optionally restrict to certain origins (safer for production):
-# CORS(app, resources={r"/predict": {"origins": "http://localhost:3000"}})
+# CORS(app, ggg resources={r"/predict": {"origins": "http://localhost:3000"}})
 
 # Load models
 xray_model = XrayClassifierModel(
